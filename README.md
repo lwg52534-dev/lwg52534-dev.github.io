@@ -1,11 +1,13 @@
 # Wonguk Lee
 
-Static academic homepage for GitHub Pages. Updated 30 October 2026.
+Static academic homepage for GitHub Pages. Updated 31 October 2026.
 
-Upload the contents of this folder to the repository root. No build or installation is required. The entry point is `index.html`; `assets/` contains images, and `materials/` contains the public CV, research statement, and research proposal.
+Upload index.html, style.css, site.js, assets/, and materials/ to the repository root. No build or installation is required.
 
-The publication list distinguishes published/forthcoming work, manuscripts under review/revision, and work in progress. Publication records link to the proceedings, DOI, or publisher/indexing page. Manuscript statuses and future speaking engagements reflect the author’s updates.
+The default tab is Papers & Books. The other tabs are Positions & Experience, Projects, and Patents. Tabs support keyboard navigation, browser history, direct links to individual papers, and a compact mobile menu. The CV button opens the PDF in a new tab.
 
-Research figures can be enlarged. The mobility model and Tashu map are supplied research materials. The therapy mechanism is a labelled synthesis of the ICIS abstract. The drone research model is a proposed conceptual model, not empirical findings. Basemap attribution remains in the site.
+Papers are grouped into Published and forthcoming, Working papers, and Work in progress. Working papers retain their individual Submitted, Under review, or Revision status. All 16 paper entries include their author lists. AI Summary Design in Consumer Complaint Platforms is a working title.
 
-To edit: update text in `index.html`, styling in `style.css`, and figure interactions in `site.js`. Replace files inside `materials/` while keeping their names to preserve links.
+All site text and downloadable documents are in English. Images and existing research figures are preserved. The Tashu map retains its OpenStreetMap attribution. The therapy mechanism is a labeled synthesis of the ICIS abstract, and the drone figure is a proposed research model.
+
+To edit, update index.html, style.css, and site.js. Replace PDFs inside materials/ without changing their filenames. When revising CSS, JavaScript, or the CV, update the version query in index.html to avoid stale browser caches.

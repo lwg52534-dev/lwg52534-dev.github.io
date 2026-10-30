@@ -1,0 +1,10 @@
+GITHUB PAGES UPDATE
+
+1. Extract the ZIP file.
+2. Open the existing lwg52534-dev.github.io repository.
+3. Choose Add file > Upload files.
+4. Upload index.html, style.css, site.js, assets/, and materials/ directly to the repository root. Replace existing files at the same paths.
+5. Select Commit changes. Keep the existing GitHub Pages settings.
+6. Wait for the Pages deployment to finish and refresh the website.
+
+Upload the contents of the extracted folder, not a new enclosing folder. index.html must remain at the repository root. Uploading only assets/ or materials/ will not update the page content or design.
