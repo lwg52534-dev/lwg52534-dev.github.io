@@ -1,0 +1,49 @@
+Wonguk Lee 연구자 사이트 — GitHub Pages 게시 안내
+
+이 파일 묶음에는 기존 사이트와 같은 HTML, CSS, JavaScript, 프로필 사진, 연구 그림 및 PDF 자료가 포함되어 있습니다.
+GitHub에 게시된 상태는 아닙니다. 아래 순서로 계정에서 직접 게시할 수 있습니다.
+
+1. GitHub에 로그인하고 새 저장소를 만듭니다.
+   저장소 이름: 본인아이디.github.io
+   여기서 본인아이디는 GitHub 프로필의 정확한 username으로 바꿉니다.
+   예: 계정이 example-user라면 example-user.github.io
+   무료 계정으로 사용할 때 저장소 공개 범위는 Public을 선택합니다.
+   이미 같은 이름의 저장소로 다른 사이트를 운영 중이면 덮어쓰지 마세요.
+   그 경우 research-site 등 별도 저장소 이름을 사용하면 됩니다.
+
+2. ZIP 압축을 풉니다.
+   ZIP 자체를 업로드하지 마세요. 압축을 푼 폴더 안의 index.html, style.css, site.js,
+   assets 폴더, materials 폴더 및 .nojekyll 파일을 업로드해야 합니다.
+   index.html이 저장소의 최상위에 오도록 하세요.
+   assets와 materials의 폴더 구조를 그대로 유지합니다.
+   README.md와 이 안내 파일도 함께 올려도 됩니다.
+   .nojekyll은 숨김 파일로 보일 수 있습니다. 파일 탐색기에서 숨김 항목 표시를 켜면 됩니다.
+
+3. 저장소 화면에서 Add file → Upload files를 선택합니다.
+   비어 있는 저장소에서는 uploading an existing file 링크로 들어갈 수 있습니다.
+   파일과 두 폴더를 끌어다 놓고 Commit changes로 저장합니다.
+
+4. Settings → Pages → Build and deployment를 엽니다.
+   Source: Deploy from a branch
+   Branch: main (또는 파일을 올린 실제 기본 브랜치)
+   Folder: /(root)
+   Save를 누릅니다.
+
+5. 게시가 완료되면 같은 Pages 화면에 표시되는 사이트 주소를 엽니다.
+   본인아이디.github.io 저장소: https://본인아이디.github.io/
+   research-site 저장소: https://본인아이디.github.io/research-site/
+   주소는 예시 형식입니다. 실제 주소는 GitHub Pages 화면에서 확인하세요.
+   사진, 연구 그림 확대, 모바일 배치, 세 PDF 링크가 잘 열리는지 확인합니다.
+
+수정 방법
+- 소개와 연구 내용: index.html
+- 글자 크기와 배치: style.css
+- 사진과 연구 이미지: assets/
+- CV, Research Statement, Proposal: materials/
+파일을 바꿔 같은 브랜치에 저장하면 Pages 배포가 다시 실행됩니다.
+
+공식 안내
+https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+기존 ChatGPT 도메인의 사이트는 이 묶음을 다운로드하거나 GitHub에 업로드해도 삭제되지 않습니다.
