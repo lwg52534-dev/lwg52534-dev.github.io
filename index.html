@@ -1,35 +1,570 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Wonguk Lee | Information Systems Researcher · KAIST</title>
-<meta name="description" content="Wonguk Lee is a Ph.D. student in Management Information Systems at KAIST. Research on geospatial mobility, human–AI interaction, and access to healthcare.">
-<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>
+   Wonguk Lee | Information Systems Researcher · KAIST
+  </title>
+<meta content="Wonguk Lee, KAIST. Research on how digital technologies shape access to services, mobility, and trust in AI-mediated care." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header><nav class="container" aria-label="Main navigation"><a href="#about" class="brand">Wonguk Lee</a><div class="navlinks"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#materials">Materials</a><a class="cv-link" href="materials/Wonguk_Lee_CV.pdf">CV ↗</a></div></nav></header>
-<main id="main" class="container">
-<section class="intro" id="about" aria-labelledby="name"><div class="intro-copy"><h1 id="name">Wonguk Lee</h1><p class="position"><strong>Ph.D. Student in Management Information Systems</strong><br>Business and Technology Management, KAIST</p><p class="bio">I study how information systems complement human services and create social value, with a focus on <strong>mobility, geographic access, and healthcare AI</strong>.</p><p class="bio">My work connects technical system development, behavioral research, and empirical evaluation. I am advised by Professor Chul Ho Lee. Alongside my doctoral research, I serve as Chief Data Officer at TalentSeeker and teach data science at Baekseok University.</p><div class="inline-links"><a href="mailto:lwg5253@kaist.ac.kr">Email</a><a href="materials/Wonguk_Lee_CV.pdf">Curriculum vitae ↗</a><a href="materials/Research_Statement.pdf">Research statement ↗</a></div></div>
-<figure class="portrait"><img src="assets/wonguk-lee.jpg" alt="Portrait of Wonguk Lee" width="686" height="905" fetchpriority="high"></figure></section>
-<div class="interests"><strong>Research interests</strong><span>GIS &amp; mobility &nbsp; / &nbsp; Human–AI interaction &nbsp; / &nbsp; Healthcare access &nbsp; / &nbsp; Social outcomes</span></div>
-<section class="section" id="research" aria-labelledby="research-title"><div class="section-heading"><h2 id="research-title">Research</h2><p>Technical artifacts, behavioral mechanisms, and societal effects</p></div>
-<article class="project"><figure><a class="figure-link js-figure" href="assets/pmd-research-model.png" data-title="Personal mobility adoption research model" data-caption="Original conceptual model from Understanding Personal Mobility Device Adoption Through the S–O–R Framework. PEOU denotes perceived ease of use. Hypothesis arrows represent the proposed model, not estimated effect sizes."><img src="assets/pmd-research-model.png" alt="S–O–R model linking mobility beliefs, ease of use, innovativeness and environmental value to perceived physical risk, trust, and usage intention" width="1660" height="827" loading="lazy"></a><figcaption><strong>Figure 1.</strong> Original S–O–R research model.<br>PEOU = perceived ease of use · Click to enlarge</figcaption></figure><div><p class="status">Behavioral research · Under review</p><h3>Understanding personal mobility adoption</h3><p>How do risk and trust shape the decision to use a personal mobility device?</p><p>I compare users and non-users to understand how prior experience changes the relationships between mobility beliefs, perceived physical risk, trust, and usage intention.</p><p class="method">444 respondents · PLS-SEM · Multi-group analysis</p><a class="project-link" href="#paper-pmd">Manuscript details →</a></div></article>
-<article class="project"><figure><a class="figure-link js-figure" href="assets/healthcare-framework.svg" data-title="Conversational AI and engagement" data-caption="Conceptual overview of ongoing healthcare research, drawn for this website. It summarizes questions about interface design, perceived judgment, authenticity, trust, disclosure, and engagement. It does not present clinical efficacy results."><img src="assets/healthcare-framework.svg" alt="Conceptual framework linking conversational interface design to perceived judgment, authenticity, trust, disclosure, and engagement" width="900" height="520" loading="lazy"></a><figcaption><strong>Figure 2.</strong> Conceptual framework for conversational AI and engagement. Arrows represent proposed relationships.</figcaption></figure><div><p class="status">Healthcare AI · Ongoing research</p><h3>Conversational AI in mental healthcare</h3><p>In collaboration with Jeonbuk National University Hospital, I develop and study an LLM/RAG chatbot offered free of charge to patients with schizophrenia.</p><p>I examine how interface design affects perceived judgment, authenticity, trust, and willingness to engage.</p><p class="method">Human–AI interaction · Experimental research · Patient-facing development</p><a class="project-link" href="#paper-therapy">Thought-Bubbles in Therapy →</a></div></article>
-<article class="project"><figure class="study-map"><a class="figure-link js-figure" href="assets/tashu-study-map.jpg" data-title="Spatial analysis in Yuseong District" data-caption="Original Figure 1 from the author’s Tashu bike-sharing study: 500 m analytical cells and merchant locations in Yuseong District, Daejeon. Basemap © OpenStreetMap contributors. Select Close or press Escape to return."><img src="assets/tashu-study-map.jpg" alt="Original research map showing 500 m analytical cells and merchant locations across Yuseong District in Daejeon" width="1212" height="711"></a><figcaption><strong>Figure 3.</strong> Original Tashu study map: 500 m analytical cells and merchant locations in Yuseong District, Daejeon.<br>Basemap © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> · Click to enlarge</figcaption></figure><div><p class="status">Urban mobility · Under revision</p><h3>Bike-sharing, public transit, and local economies</h3><p>I secured and led a Yuseong District-supported project combining Tashu bike-sharing, public transit, Shinhan Card spending, and KT population-movement data.</p><p>The study examines first- and last-mile connections, local festivals, and the relationship between mobility and consumer activity.</p><p class="method">GIS · Mobility and transaction data · Local policy evaluation</p><a class="project-link" href="#paper-tashu">Excellent Paper Award, Korea Society of IT Services →</a></div></article>
-<div class="proposed" id="proposal"><div class="label">Research proposal</div><div class="proposal-head"><div><h3>Drone delivery and geographic access to medications</h3><p>When does autonomous delivery help existing healthcare systems reach people who face geographic barriers? I propose to combine a verified history of prescription-drone services with satellite observations and road-network accessibility.</p><a class="text-link" href="materials/Planet_Research_Proposal.pdf">Read the research proposal ↗</a></div><div class="proposal-meta"><div><strong>Initial geographic focus</strong><br>College Station, Texas<br>Salt Lake Valley, Utah</div><div><strong>Data access inquiry</strong><br>PlanetScope historical imagery<br>Targeted SkySat validation, if available</div></div></div><div class="proposal-context"><div><h4>Related literature</h4><p>Drone logistics studies document delivery performance, while a recent <a href="https://doi.org/10.1016/j.japh.2026.103553" target="_blank" rel="noopener">scoping review</a> identifies limited evidence on adherence, clinical outcomes, and equity. <a href="https://doi.org/10.1186/1475-9276-12-18" target="_blank" rel="noopener">Patient access theory</a> helps distinguish service availability from the ability to obtain care.</p></div><div><h4>Research gap</h4><p>I examine when verified prescription-drone service eligibility translates into realized medication access, and how baseline travel burden, pharmacy access, and household transport constraints shape the benefits.</p></div></div><figure class="wide-figure"><a class="js-figure" href="assets/drone-study-design.svg" data-title="Drone delivery study design" data-caption="Proposed measurement and analysis plan. Documentary sources establish actual service operation; imagery characterizes physical context. Use and health outcomes require appropriate additional data."><img src="assets/drone-study-design.svg" alt="Proposed study combining operational records, satellite imagery and road networks to examine medication access, actual use and health outcomes" width="1080" height="455" loading="lazy"></a><figcaption><strong>Figure 4.</strong> Proposed evidence architecture. Operational records establish service exposure; imagery describes physical context. Click to enlarge.</figcaption></figure><p class="note">The project is at the proposal stage. Planet and U.S. outcome-data access have not yet been secured. Imagery alone cannot establish delivery activity, medication receipt, or health benefits.</p><details class="evidence"><summary>Documentary starting points and interpretation</summary><p><strong>College Station, Texas.</strong> A <a href="https://www.pharmacy.texas.gov/files_pdf/BN/Aug24/D.1.pdf" target="_blank" rel="noopener">Texas pharmacy-board report</a> records prescription-drone service beginning on 28 August 2023. <a href="https://www.aboutamazon.com/news/retail/amazon-pharmacy-amazon-air-prescription-drone-delivery" target="_blank" rel="noopener">Amazon’s later notice</a> reports the pilot’s closure; the exact end date requires verification.</p><p><strong>Salt Lake Valley, Utah.</strong> <a href="https://news.intermountainhealth.org/zipline-and-intermountain-healthcare-begin-drone-deliveries-in-the-salt-lake-valley-and-will-ultimately-be-capable-of-delivering-to-more-than-1-million-people/" target="_blank" rel="noopener">Intermountain’s announcement</a> dated 4 October 2022 describes service beginning for selected eligible households. Historical coverage and continuity require verification.</p></details></div></section>
-<section class="section" id="publications" aria-labelledby="publications-title"><div class="section-heading"><h2 id="publications-title">Selected publications and manuscripts</h2><p>Full research record in the <a href="materials/Wonguk_Lee_CV.pdf">CV ↗</a></p></div>
-<article class="publication" id="paper-pmd"><div class="category">Manuscript</div><div><h3>Understanding Personal Mobility Device Adoption Through the S–O–R Framework: A Multi-Group Analysis of Users and Non-users</h3><p class="pub-status">Under review</p><p>Technology adoption, physical risk, and trust among PMD users and non-users.</p></div></article>
-<article class="publication" id="paper-tashu"><div class="category">Manuscript</div><div><h3>The Effects of Public Bike-Sharing (Tashu) and Public Transit Integration on Local Festivals and Consumer Spending</h3><p class="pub-status">Under revision at a Korean journal · Excellent Paper Award, Korea Society of IT Services</p><p>Transit complementarity, geographic flows, and local economic activity.</p></div></article>
-<article class="publication" id="paper-therapy"><div class="category">Research program</div><div><h3>Thought-Bubbles in Therapy: The Effect of Conversational AI’s Transparency in Mental Health Contexts</h3><p>Conversational interface transparency, perceived judgmentalness, trust, disclosure, and compliance intention.</p><p class="pub-status">Related healthcare research dissemination: CIST · ICIS · SCECR</p></div></article>
-<article class="publication"><div class="category">Book chapter<br>2026</div><div><h3>Generative AI as a Creative Collaborator</h3><p>Lee, W. In <em>AI Transformation Era: Innovation and Challenges of Korean Industries Highlighted by KAIST.</em> Yulgok Publishing.</p></div></article>
-<article class="publication"><div class="category">Academic book</div><div><h3>AI Era: Structure and Sustainability of the Korean Workforce Ecosystem</h3><p>Co-author.</p><p class="pub-status">Excellent Academic Book selection, National Academy of Sciences, Republic of Korea · 2025</p></div></article>
-<details class="more-papers"><summary>Additional research in digital innovation and finance</summary><ul><li><em>The Role of NFTs in the Digital World: Catalyzing Innovation in the Creative Industry through a Patent-Inspired Approach.</em></li><li><em>When the AI Bot Advisor Leaves: Unpacking Investor Shifts and Loan Imbalances in P2P Lending.</em></li></ul></details></section>
-<div class="two-column" id="experience"><section aria-labelledby="experience-title"><h2 id="experience-title">Experience and teaching</h2><div class="appointment"><h3>Chief Data Officer · TalentSeeker</h3><p class="meta">February 2024–present · Full-time C-level role</p><p>Lead data ontology development, multi-agent systems, data-pipeline architecture, data engineering, and LLMOps. Government-supported projects include ontology-based recruitment AI and automated resume-data systems.</p></div><div class="appointment"><h3>Lead Course Instructor · Baekseok University</h3><p class="meta">Data Science · Second semester, 2026 · English-medium</p><p>Course design and teaching in Python, pandas, data preparation, visualization, introductory statistics and prediction, responsible generative AI use, and analytical communication.</p></div><div class="appointment"><h3>Research and technical development</h3><p>OSM-supported road detection and geometry, physics/XGBoost speed recommendations, and collaborative R&amp;D. Additional experience includes recruitment sLLM research planning and data experimentation for an international smart-farm project plan.</p></div><a class="text-link" href="materials/Wonguk_Lee_CV.pdf">Education, projects, and full career record ↗</a></section>
-<section aria-labelledby="patents-title"><h2 id="patents-title">Patents</h2><div class="patent"><h3>Road Determination Device and Method of Determining a Road</h3><p>Korean application 10-2025-0209757 · Filed 24 December 2025</p></div><div class="patent"><h3>Recommended Speed Determination Apparatus and Method</h3><p>Korean application 10-2025-0207816 · Filed 23 December 2025</p></div><div class="patent"><h3>Ontology-Based Data Standardization Apparatus for Human Resource Management and Operating Method</h3><p>Korean patent 10-2891011 · Registered 20 November 2025</p></div><div class="patent"><h3>Apparatus and Method for Ontology-Based Candidate Search</h3><p>Korean application 10-2025-0170399 · Filed 12 November 2025</p></div><p class="award"><strong>Additional recognition</strong><br>Outstanding Research Idea Award, BTM Seminar, KAIST — research on the withdrawal of AI bot advisors in P2P lending.</p></section></div>
-<section class="materials" id="materials"><h2>Research materials</h2><p>Curriculum vitae, research agenda, and a proposal with figures and references.</p><div class="downloads"><a class="download" href="materials/Wonguk_Lee_CV.pdf"><div><strong>Curriculum vitae</strong><small>Education, appointments, research, and patents · PDF</small></div><span class="arrow" aria-hidden="true">↗</span></a><a class="download" href="materials/Research_Statement.pdf"><div><strong>Research statement</strong><small>Research agenda and long-term direction · PDF</small></div><span class="arrow" aria-hidden="true">↗</span></a><a class="download" href="materials/Planet_Research_Proposal.pdf"><div><strong>Planet research proposal</strong><small>Literature, research gaps, study design, and references · PDF</small></div><span class="arrow" aria-hidden="true">↗</span></a></div></section>
-<section class="contact"><div><h2>Contact</h2><p>Academic collaboration and research data inquiries</p></div><a href="mailto:lwg5253@kaist.ac.kr">lwg5253@kaist.ac.kr ↗</a></section></main>
-<footer><div class="container"><p>Wonguk Lee · Information Systems, KAIST<br>The proposed Planet study is non-commercial academic research, separate from TalentSeeker’s business activities.</p><p>Updated 30 October 2026</p></div></footer>
-<dialog id="figure-dialog" aria-labelledby="figure-dialog-title"><div class="dialog-header"><h2 id="figure-dialog-title">Research figure</h2><button type="button" id="close-figure" aria-label="Close enlarged figure">Close ×</button></div><div class="dialog-image-wrap"><img id="figure-dialog-image" alt=""></div><p id="figure-dialog-caption"></p></dialog>
-<script src="site.js" defer></script>
-</body></html>
+<a class="skip" href="#main">
+   Skip to content
+  </a>
+<header>
+<nav aria-label="Main navigation" class="container">
+<a class="brand" href="#about">
+     Wonguk Lee
+    </a>
+<div class="navlinks">
+<a href="#publications">
+      Publications
+     </a>
+<a href="#research">
+      Research
+     </a>
+<a href="#experience">
+      Experience
+     </a>
+<a href="#patents">Patents</a><a href="#materials">
+      Materials
+     </a>
+<a class="cv-link" href="materials/Wonguk_Lee_CV.pdf">
+      CV ↗
+     </a>
+</div>
+</nav>
+</header>
+<main class="container" id="main">
+<section aria-labelledby="name" class="intro" id="about">
+<div class="intro-copy">
+<h1 id="name">
+      Wonguk Lee
+     </h1>
+<p class="position">
+<strong>Information Systems · KAIST</strong>
+<br/>
+      Business and Technology Management
+     </p>
+<p class="bio">
+      I study how digital technologies change people’s ability to access and benefit from essential services. My work begins with a distinction: a service can be available without being accessible in practice. Reaching a pharmacy may depend on where someone lives and how they travel; seeking care may depend on whether they feel understood or judged.
+     </p>
+<p class="bio">Across mobility, healthcare AI, and digital platforms, I examine how design choices and institutional rules interact with these constraints. I want to understand when technology expands people’s opportunities to obtain support or participate in a market, and what changes when that support is withdrawn.</p>
+<p class="bio affiliation">
+      I am a Ph.D. student at KAIST, advised by Professor Chul Ho Lee. I also serve as Chief Data Officer at TalentSeeker and teach data science at Baekseok University.
+     </p>
+<div class="inline-links">
+<a href="mailto:lwg5253@kaist.ac.kr">
+       Email
+      </a>
+<a href="materials/Wonguk_Lee_CV.pdf">
+       Curriculum vitae ↗
+      </a>
+<a href="materials/Research_Statement.pdf">
+       Research statement ↗
+      </a>
+</div>
+</div>
+<figure class="portrait">
+<img alt="Portrait of Wonguk Lee" fetchpriority="high" height="905" src="assets/wonguk-lee.jpg" width="686"/>
+</figure>
+</section>
+<section aria-labelledby="publications-title" class="section" id="publications"><div class="section-heading"><h2 id="publications-title">Publications and research</h2></div><h3 class="pub-group">Published and forthcoming</h3><article class="publication" id="paper-ajti"><div class="category">Forthcoming</div><div><h4>Sectoral Heterogeneity in the Digital Transformation-Financial Performance Nexus: Evidence from Korean Manufacturing Firms</h4><p class="pub-status">Accepted · Forthcoming in <em>Asian Journal of Technology Innovation</em></p></div></article><article class="publication" id="paper-therapy">
+<div class="category">
+      2026
+     </div>
+<div>
+<h4>
+<a href="https://aisel.aisnet.org/icis2026/health/health/19/">
+        Thought-Bubbles in Therapy: The Effect of Conversational AI’s Transparency in Mental Health Contexts
+       </a>
+</h4>
+<p class="authors">
+<strong>Lee, W.</strong>, Min, D., Kim, A., &amp; Lee, C. H.
+      </p>
+<p>
+<em>ICIS 2026 Proceedings</em>, Healthcare and Wellbeing, Paper 19. Completed research paper.
+      </p>
+<p class="paper-links">
+<a href="https://aisel.aisnet.org/icis2026/health/health/19/">
+        Proceedings ↗
+       </a>
+</p>
+</div>
+</article><article class="publication" id="paper-metaverse">
+<div class="category">
+      2024
+     </div>
+<div>
+<h4>
+<a href="https://doi.org/10.9716/KITS.2024.23.6.001">
+        Transformation of Business Models in Metaverse Era: Through a Systematic Literature Review and Bibliometric Analysis
+       </a>
+</h4>
+<p class="original-title" lang="ko">
+       메타버스 시대에서 비즈니스 모델의 변화에 대한 고찰: 체계적 문헌 고찰 방법과 계량서지분석을 통하여
+      </p>
+<p class="authors">
+       Shenkoya, T.,
+       <strong>Lee, W.</strong>, &amp; Kim, E.
+      </p>
+<p>
+<em>Journal of Information Technology Services</em>, 23(6), 1–17.
+      </p>
+<p class="paper-links">
+<a href="https://doi.org/10.9716/KITS.2024.23.6.001">
+        DOI ↗
+       </a>
+<a href="https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=JAKO202407250407152">
+        ScienceON ↗
+       </a>
+</p>
+</div>
+</article><article class="publication" id="paper-knowledge">
+<div class="category">
+      2024
+     </div>
+<div>
+<h4>
+<a href="https://doi.org/10.35978/jktis.2024.6.27.3.431">
+        A Study on the Flow of Technological Knowledge in Korean Industries: Focusing on Inter-industry Patent Citation Analysis Based on Pavitt’s Taxonomy
+       </a>
+</h4>
+<p class="original-title" lang="ko">
+       한국의 산업유형별 기술 지식 흐름에 관한 연구: Pavitt의 분류에 따른 산업간 특허 인용 분석을 중심으로
+      </p>
+<p class="authors">
+<strong>Lee, W.</strong>, &amp; Kim, E.
+      </p>
+<p>
+<em lang="ko">기술혁신학회지</em>, 27(3), 431–454.
+      </p>
+<p class="paper-links">
+<a href="https://doi.org/10.35978/jktis.2024.6.27.3.431">
+        DOI ↗
+       </a>
+<a href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11840193">
+        DBpia ↗
+       </a>
+</p>
+</div>
+</article><article class="publication" id="paper-pmd-2022">
+<div class="category">
+      2022
+     </div>
+<div>
+<h4>
+<a href="https://doi.org/10.14329/isr.2022.24.2.067">
+        A Study on the Intention to use Personal Mobility Services: Focused on the SOR (Stimulus-Organism-Response) Model
+       </a>
+</h4>
+<p class="original-title" lang="ko">
+       퍼스널 모빌리티 사용의도에 관한 연구: SOR(Stimulus-Organism-Response) 모델을 중심으로
+      </p>
+<p class="authors">
+<strong>Lee, W.</strong>, &amp; Yang, H.
+      </p>
+<p>
+<em>Information Systems Review</em>, 24(2), 67–88.
+      </p>
+<p class="paper-links">
+<a href="https://doi.org/10.14329/isr.2022.24.2.067">
+        DOI ↗
+       </a>
+<a href="https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=JAKO202213043209604">
+        ScienceON ↗
+       </a>
+</p>
+</div>
+</article><article class="publication">
+<div class="category">
+      Book chapter
+      <br/>
+      2026
+     </div>
+<div>
+<h4>
+       Generative AI as a Creative Collaborator
+      </h4>
+<p>
+       Lee, W. In
+       <em>AI Transformation Era: Innovation and Challenges of Korean Industries Highlighted by KAIST.</em>
+       Yulgok Publishing.
+      </p>
+</div>
+</article><article class="publication">
+<div class="category">
+      Academic book
+     </div>
+<div>
+<h4>
+       AI Era: Structure and Sustainability of the Korean Workforce Ecosystem
+      </h4>
+<p>
+       Co-author.
+      </p>
+<p class="pub-status">
+       Excellent Academic Book selection, National Academy of Sciences, Republic of Korea · 2025
+      </p>
+</div>
+</article><h3 class="pub-group">Under review and revision</h3><article class="publication" id="paper-hypernetwork"><div class="category">Revision</div><div><h4>Formation and Dissipation of the Hypernetwork Effect: Transitional Complementarity between Learning and Participation in AI-Driven Networks</h4><p class="pub-status">Under revision · Second round</p></div></article><article class="publication" id="paper-ico"><div class="category">Revision</div><div><h4>Primary Token Issuance and Liquidity-Segmented Returns in Crypto Markets</h4><p class="pub-status">Under revision · Minor revision</p></div></article><article class="publication" id="paper-cde"><div class="category">Submitted</div><div><h4>Understanding corporate digital entrepreneurship in financial institutions: The roles of AI adoption and entrepreneurial orientation</h4><p class="authors">Yang, H., &amp; <strong>Lee, W.</strong></p><p class="pub-status">Submitted</p></div></article><article class="publication" id="paper-pmd">
+<div class="category">Manuscript</div>
+<div>
+<h4>
+       Understanding Personal Mobility Device Adoption Through the S–O–R Framework: A Multi-Group Analysis of Users and Non-users
+      </h4>
+<p class="pub-status">
+       Under review
+      </p>
+<p>
+       Technology adoption, physical risk, and trust among PMD users and non-users.
+      </p>
+</div>
+</article><article class="publication" id="paper-tashu">
+<div class="category">Manuscript</div>
+<div>
+<h4>
+       The Effects of Public Bike-Sharing (Tashu) and Public Transit Integration on Local Festivals and Consumer Spending
+      </h4>
+<p class="pub-status">
+       Under revision at a Korean journal · Excellent Paper Award, Korea Society of IT Services
+      </p>
+<p>
+       Transit complementarity, geographic flows, and local economic activity.
+      </p>
+</div>
+</article><h3 class="pub-group">Work in progress</h3><article class="publication" id="paper-green"><div class="category">Manuscript</div><div><h4>Breadth to Enter, Relatedness to Stay: Technology Portfolios and the Limits of Firms’ Green Diversification</h4><p class="pub-status">Work in progress</p></div></article><article class="publication" id="paper-therapy-ongoing"><div class="category">Manuscript</div><div><h4>Thought-Bubbles in Therapy: The Effect of Conversational AI’s Transparency in Mental Health Contexts</h4><p class="pub-status">Work in progress</p><p>Ongoing manuscript development. The <a href="https://aisel.aisnet.org/icis2026/health/health/19/">ICIS 2026 proceedings version</a> is listed above.</p></div></article><article class="publication" id="paper-investor"><div class="category">Manuscript</div><div><h4>Protecting the Investor, Punishing the Retailer: The Perverse Effects of Banning AI Autonomous Investment</h4><p class="pub-status">Work in progress · Accepted for presentation at WITS</p><p>Presentation forthcoming.</p></div></article><article class="publication" id="paper-nft"><div class="category">Manuscript</div><div><h4>The Role of NFTs in the Digital World: Catalyzing Innovation in the Creative Industry through a Patent-Inspired Approach</h4><p class="pub-status">Work in progress</p></div></article></section>
+<section aria-labelledby="research-title" class="section" id="research">
+<div class="section-heading">
+<h2 id="research-title">
+      Research
+     </h2>
+</div>
+<article class="project">
+<figure>
+<a class="figure-link js-figure" data-caption="Mechanism summarized from the ICIS 2026 proceedings abstract (Lee, Min, Kim, and Lee). Redrawn for this page; signs describe the reported directions, not estimated coefficients. This is not a reproduction of the paper’s original figure." data-title="Thought-Bubbles in Therapy" href="assets/therapy-mechanism.svg">
+<img alt="Empathetic thought bubbles increase perceived authenticity, reducing perceived judgmentalness and supporting trust, satisfaction, disclosure and compliance." height="500" loading="lazy" src="assets/therapy-mechanism.svg" width="890"/>
+</a>
+<figcaption>
+       Mechanism summarized from
+       <a href="https://aisel.aisnet.org/icis2026/health/health/19/">
+        Lee et al., ICIS 2026
+       </a>. Redrawn for this page; click to enlarge.
+      </figcaption>
+</figure>
+<div>
+<p class="status">
+       ICIS 2026 · Healthcare and Wellbeing
+      </p>
+<h3>
+       Feeling understood by conversational AI
+      </h3>
+<p>
+       People may turn to an AI counselor to avoid being judged, yet still question whether its empathy is sincere. Our Thought-Bubbles study examines how the presentation of a chatbot’s response shapes perceived authenticity and judgment.
+      </p>
+<p>
+       This work includes two online lab studies and a clinical study. My broader collaboration with Jeonbuk National University Hospital involves developing and studying an LLM/RAG chatbot for patients with schizophrenia.
+      </p>
+<a class="project-link" href="https://aisel.aisnet.org/icis2026/health/health/19/">
+       Read the ICIS proceedings paper ↗
+      </a>
+</div>
+</article>
+<article class="project">
+<figure>
+<a class="figure-link js-figure" data-caption="Original conceptual model from Understanding Personal Mobility Device Adoption Through the S–O–R Framework. PEOU denotes perceived ease of use. Hypothesis arrows represent the proposed model, not estimated effect sizes." data-title="Personal mobility adoption research model" href="assets/pmd-research-model.png">
+<img alt="S–O–R model linking mobility beliefs, ease of use, innovativeness and environmental value to perceived physical risk, trust, and usage intention" height="827" loading="lazy" src="assets/pmd-research-model.png" width="1660"/>
+</a>
+<figcaption>
+       Original S–O–R research model.
+       <br/>
+       PEOU = perceived ease of use · Click to enlarge
+      </figcaption>
+</figure>
+<div>
+<p class="status">
+       Behavioral research · Under review
+      </p>
+<h3>
+       Understanding personal mobility adoption
+      </h3>
+<p>
+       How do risk and trust shape the decision to use a personal mobility device?
+      </p>
+<p>
+       I compare users and non-users to understand how prior experience changes the relationships between mobility beliefs, perceived physical risk, trust, and usage intention.
+      </p>
+<p class="method">
+       444 respondents · PLS-SEM · Multi-group analysis
+      </p>
+<a class="project-link" href="#paper-pmd">
+       Manuscript details →
+      </a>
+</div>
+</article>
+<article class="project">
+<figure class="study-map">
+<a class="figure-link js-figure" data-caption="Original Figure 1 from the author’s Tashu bike-sharing study: 500 m analytical cells and merchant locations in Yuseong District, Daejeon. Basemap © OpenStreetMap contributors. Select Close or press Escape to return." data-title="Spatial analysis in Yuseong District" href="assets/tashu-study-map.jpg">
+<img alt="Original research map showing 500 m analytical cells and merchant locations across Yuseong District in Daejeon" height="711" src="assets/tashu-study-map.jpg" width="1212"/>
+</a>
+<figcaption>
+       Original Tashu study map: 500 m analytical cells and merchant locations in Yuseong District, Daejeon.
+       <br/>
+       Basemap ©
+       <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">
+        OpenStreetMap contributors
+       </a>
+       · Click to enlarge
+      </figcaption>
+</figure>
+<div>
+<p class="status">
+       Urban mobility · Under revision
+      </p>
+<h3>
+       Bike-sharing, public transit, and local economies
+      </h3>
+<p>
+       I secured and led a Yuseong District-supported project combining Tashu bike-sharing, public transit, Shinhan Card spending, and KT population-movement data.
+      </p>
+<p>
+       The study examines first- and last-mile connections, local festivals, and the relationship between mobility and consumer activity.
+      </p>
+<p class="method">
+       GIS · Mobility and transaction data · Local policy evaluation
+      </p>
+<a class="project-link" href="#paper-tashu">
+       Excellent Paper Award, Korea Society of IT Services →
+      </a>
+</div>
+</article>
+<div class="proposed" id="proposal">
+<div class="label">
+      Research proposal
+     </div>
+<div class="proposal-head">
+<div>
+<h3>
+        Drone delivery and geographic access to medications
+       </h3>
+<p>
+        A faster delivery system matters if it changes whether people can obtain the medication they need. This proposed study examines how prescription-drone eligibility affects the burden of obtaining medication, and whether that change supports refill continuity in places with limited pharmacy access.
+       </p>
+<a class="text-link" href="materials/Planet_Research_Proposal.pdf">
+        Read the research proposal ↗
+       </a>
+</div>
+<div class="proposal-meta">
+<div>
+<strong>Initial geographic focus</strong>
+<br/>
+        College Station, Texas
+        <br/>
+        Salt Lake Valley, Utah
+       </div>
+<div>
+<strong>Data access inquiry</strong>
+<br/>
+        PlanetScope historical imagery
+        <br/>
+        Targeted SkySat validation, if available
+       </div>
+</div>
+</div>
+<div class="proposal-context">
+<div>
+<h4>
+        Related literature
+       </h4>
+<p>
+        Drone logistics studies document delivery performance, while a recent
+        <a href="https://doi.org/10.1016/j.japh.2026.103553" rel="noopener" target="_blank">
+         scoping review
+        </a>
+        identifies limited evidence on adherence, clinical outcomes, and equity.
+        <a href="https://doi.org/10.1186/1475-9276-12-18" rel="noopener" target="_blank">
+         Patient access theory
+        </a>
+        helps distinguish service availability from the ability to obtain care.
+       </p>
+</div>
+<div>
+<h4>
+        Research gap
+       </h4>
+<p>
+        The key question is whether extending a service’s reach removes the constraints that prevent people from obtaining medication. I distinguish geographic availability, the burden of acquiring medication, and refill continuity, while testing whether benefits vary with baseline disadvantage.
+       </p>
+</div>
+</div>
+<figure class="wide-figure">
+<a class="js-figure" data-caption="H1: operating-service eligibility reduces medication acquisition burden. H2: greater burden reduces refill continuity. H3: baseline geographic disadvantage strengthens H1. These are proposed hypotheses. A residual pathway allows other mechanisms; causal mediation requires additional data and assumptions." data-title="Proposed research model" href="assets/drone-research-model.svg">
+<img alt="Proposed moderated mediation model: service eligibility reduces medication acquisition burden; greater acquisition burden reduces refill continuity. Baseline geographic disadvantage strengthens H1. Other pathways are retained." height="435" loading="lazy" src="assets/drone-research-model.svg" width="1080"/>
+</a>
+<figcaption>
+       Proposed research model. Solid arrows show hypothesized relationships; the dashed arrow marks moderation. H1–H3 and their measurement requirements are developed in the proposal. Click to enlarge.
+      </figcaption>
+</figure>
+<p class="note">
+      The project is at the proposal stage. Planet and U.S. outcome-data access have not yet been secured. Imagery alone cannot establish delivery activity, medication receipt, or health benefits.
+     </p>
+<details class="evidence">
+<summary>
+       Documentary starting points and interpretation
+      </summary>
+<p>
+<strong>College Station, Texas.</strong>
+       A
+       <a href="https://www.pharmacy.texas.gov/files_pdf/BN/Aug24/D.1.pdf" rel="noopener" target="_blank">
+        Texas pharmacy-board report
+       </a>
+       records prescription-drone service beginning on 28 August 2023.
+       <a href="https://www.aboutamazon.com/news/retail/amazon-pharmacy-amazon-air-prescription-drone-delivery" rel="noopener" target="_blank">
+        Amazon’s later notice
+       </a>
+       reports the pilot’s closure; the exact end date requires verification.
+      </p>
+<p>
+<strong>Salt Lake Valley, Utah.</strong>
+<a href="https://news.intermountainhealth.org/zipline-and-intermountain-healthcare-begin-drone-deliveries-in-the-salt-lake-valley-and-will-ultimately-be-capable-of-delivering-to-more-than-1-million-people/" rel="noopener" target="_blank">
+        Intermountain’s announcement
+       </a>
+       dated 4 October 2022 describes service beginning for selected eligible households. Historical coverage and continuity require verification.
+      </p>
+</details>
+</div>
+</section>
+<div class="experience-record" id="experience">
+<section aria-labelledby="experience-title">
+<h2 id="experience-title">
+      Experience and teaching
+     </h2>
+<div class="appointment">
+<h3>
+       Chief Data Officer · TalentSeeker
+      </h3>
+<p class="meta">
+       February 2024–present · Full-time C-level role
+      </p>
+<p>
+       Lead data ontology development, multi-agent systems, data-pipeline architecture, data engineering, and LLMOps. Government-supported projects include ontology-based recruitment AI and automated resume-data systems.
+      </p>
+</div>
+<div class="appointment">
+<h3>
+       Lead Course Instructor · Baekseok University
+      </h3>
+<p class="meta">
+       Data Science · Second semester, 2026 · English-medium
+      </p>
+<p>
+       Course design and teaching in Python, pandas, data preparation, visualization, introductory statistics and prediction, responsible generative AI use, and analytical communication.
+      </p>
+</div>
+<div class="appointment">
+<h3>
+       Research and technical development
+      </h3>
+<p>
+       OSM-supported road detection and geometry, physics/XGBoost speed recommendations, and collaborative R&amp;D. Additional experience includes recruitment sLLM research planning and data experimentation for an international smart-farm project plan.
+      </p>
+</div>
+<div class="appointment"><h3>Upcoming presentations</h3><p class="meta">CES 2027 · Scheduled C-level speaker</p><p>Scheduled to attend CES 2027 as a C-level speaker in my role as Chief Data Officer at TalentSeeker.</p><p class="meta">WITS · Accepted presentation</p><p><a href="#paper-investor">Protecting the Investor, Punishing the Retailer</a> has been accepted for presentation. Presentation forthcoming.</p></div><a class="text-link" href="materials/Wonguk_Lee_CV.pdf">
+      Education, projects, and full career record ↗
+     </a>
+<p class="award">
+<strong>Additional recognition</strong>
+<br/>
+      Outstanding Research Idea Award, BTM Seminar, KAIST — research on the withdrawal of AI bot advisors in P2P lending.
+     </p></section>
+</div><section aria-labelledby="patents-title" class="section patents-record" id="patents"><h2 id="patents-title">Patents and applications</h2><article class="patent" id="patent-hr-standard"><h3>Ontology-Based Data Standardization for Human Resource Management</h3><p class="patent-original" lang="ko">온톨로지 기반 인적 자원 관리를 위한 데이터 표준화 장치 및 이의 동작 방법</p><p>Korean patent 10-2891011 · Registered 20 November 2025</p><p>Application 10-2025-0100830 · Filed 24 July 2025. A related PCT international application has also been filed.</p></article><article class="patent" id="patent-job-inference"><h3>Ontology-Based Human Resource Analysis and Job Inference</h3><p class="patent-original" lang="ko">온톨로지를 이용한 인적자원분석 및 직무추론 처리장치 및 이의 동작 방법</p><p>Korean application 10-2025-0174900 · Filed 18 November 2025</p><p>Decision to grant received.</p></article><article class="patent" id="patent-llm-ontology"><h3>LLM-Based Ontology Data Processing for Human Resource Information</h3><p class="patent-original" lang="ko">거대언어모델 기반 인적자원정보 온톨로지 데이터 처리 방법 및 장치</p><p>Korean application 10-2025-0176365 · Filed 19 November 2025</p><p>Decision to grant received.</p></article><article class="patent" id="patent-hiring-needs"><h3>Talent Search and Recommendation Based on Conversational Hiring-Needs Analysis</h3><p class="patent-original" lang="ko">대화형 채용 니즈 분석 기반의 인재 검색 및 추천 장치</p><p>Korean application 10-2026-0110525 · Filed 17 June 2026</p><p>Under prioritized examination.</p></article><article class="patent" id="patent-context"><h3>Resume Data Augmentation and Personalized Inference Using Relationship-Aware LLM Context</h3><p class="patent-original" lang="ko">LLM의 관계 인식 문맥 생성을 이용한 이력 데이터 결손 증강 및 개인화 추론 방법 및 시스템</p><p>Korean application 10-2026-0082060 · Filed 7 May 2026</p><p>Under prioritized examination.</p></article><article class="patent" id="patent-road"><h3>Road Determination Device and Method of Determining a Road</h3><p>Korean application 10-2025-0209757 · Filed 24 December 2025</p></article><article class="patent" id="patent-speed"><h3>Recommended Speed Determination Apparatus and Method</h3><p>Korean application 10-2025-0207816 · Filed 23 December 2025</p></article><article class="patent" id="patent-candidate"><h3>Ontology-Based Natural-Language Query Processing and Interactive Candidate Filtering</h3><p class="patent-original" lang="ko">온톨로지 기반 자연어 질의 처리 및 대화형 필터링 후보자 검색 장치 및 방법</p><p>Korean application 10-2025-0170399 · Filed 12 November 2025</p><p>Under prioritized examination.</p></article><article class="patent" id="patent-image-tags"><h3>Method and Apparatus for Evaluating Image Tags for AI Training</h3><p class="patent-original" lang="ko">인공지능 학습용 이미지 태그를 평가하는 방법 및 장치</p><p>Korean application 10-2024-0067992 · Filed 24 May 2024</p></article><article class="patent" id="patent-pipe"><h3>Method for Predicting Fracture of Pipe Due to Corrosion of Alloy and System Thereof</h3><p class="patent-original" lang="ko">합금 부식으로 인한 배관 파단 예측방법 및 시스템</p><p>Korean patent application specification · 17 April 2024</p></article></section>
+<section class="materials" id="materials">
+<h2>
+     Research materials
+    </h2>
+<p>
+     Documents on my background and current research.
+    </p>
+<div class="downloads">
+<a class="download" href="materials/Wonguk_Lee_CV.pdf">
+<div>
+<strong>Curriculum vitae</strong>
+<small>
+        Education, appointments, research, and patents · PDF
+       </small>
+</div>
+<span aria-hidden="true" class="arrow">
+       ↗
+      </span>
+</a>
+<a class="download" href="materials/Research_Statement.pdf">
+<div>
+<strong>Research statement</strong>
+<small>
+        Research agenda and long-term direction · PDF
+       </small>
+</div>
+<span aria-hidden="true" class="arrow">
+       ↗
+      </span>
+</a>
+<a class="download" href="materials/Planet_Research_Proposal.pdf">
+<div>
+<strong>Planet research proposal</strong>
+<small>
+        Literature, research gaps, study design, and references · PDF
+       </small>
+</div>
+<span aria-hidden="true" class="arrow">
+       ↗
+      </span>
+</a>
+</div>
+</section>
+<section class="contact">
+<div>
+<h2>
+      Contact
+     </h2>
+<p>
+      Academic collaboration and research data inquiries
+     </p>
+</div>
+<a href="mailto:lwg5253@kaist.ac.kr">
+     lwg5253@kaist.ac.kr ↗
+    </a>
+</section>
+</main>
+<footer>
+<div class="container">
+<p>
+     Wonguk Lee · KAIST · lwg5253@kaist.ac.kr
+    </p>
+<p>
+     Updated 30 October 2026
+    </p>
+</div>
+</footer>
+<dialog aria-labelledby="figure-dialog-title" id="figure-dialog">
+<div class="dialog-header">
+<h2 id="figure-dialog-title">
+     Research figure
+    </h2>
+<button aria-label="Close enlarged figure" id="close-figure" type="button">
+     Close ×
+    </button>
+</div>
+<div class="dialog-image-wrap">
+<img alt="" id="figure-dialog-image"/>
+</div>
+<p id="figure-dialog-caption">
+</p>
+</dialog>
+<script defer="" src="site.js">
+</script>
+</body>
+</html>
