@@ -1,13 +1,21 @@
 # Wonguk Lee
 
-Static academic homepage for GitHub Pages. Updated 31 October 2026.
+Academic homepage for GitHub Pages. Updated 3 November 2026.
 
-Upload index.html, style.css, site.js, assets/, and materials/ to the repository root. No build or installation is required.
+This is a complete static website. No build, installation, server, or API key is required. Upload the contents of this folder directly to the repository root, with index.html beside the assets and materials folders.
 
-The default tab is Papers & Books. The other tabs are Positions & Experience, Projects, and Patents. Tabs support keyboard navigation, browser history, direct links to individual papers, and a compact mobile menu. The CV button opens the PDF in a new tab.
+## Content and design
 
-Papers are grouped into Published and forthcoming, Working papers, and Work in progress. Working papers retain their individual Submitted, Under review, or Revision status. All 16 paper entries include their author lists. AI Summary Design in Consumer Complaint Platforms is a working title.
+The default tab is Papers & Books; the other tabs are Positions & Experience, Projects, and Patents. Papers are grouped into Published and forthcoming, Working papers, and Work in progress. All 16 paper entries include their author lists. Individual submission and revision statuses are preserved; review-stage journal names are not shown. AI Summary Design in Consumer Complaint Platforms is a working title.
 
-All site text and downloadable documents are in English. Images and existing research figures are preserved. The Tashu map retains its OpenStreetMap attribution. The therapy mechanism is a labeled synthesis of the ICIS abstract, and the drone figure is a proposed research model.
+The website uses a white background, Georgia typography, a compact profile column, and readable bibliography entries. Mobile layouts include a collapsible navigation menu. Tabs support keyboard navigation, browser history, and links to individual entries.
 
-To edit, update index.html, style.css, and site.js. Replace PDFs inside materials/ without changing their filenames. When revising CSS, JavaScript, or the CV, update the version query in index.html to avoid stale browser caches.
+The CV restores the original A4, Times New Roman, numbered uppercase sections, horizontal rules, and bullet format. Both PDF files in materials contain the same updated four-page CV. Site buttons use the dated filename to avoid opening a cached older version.
+
+The clinical chatbot figure is the original architecture diagram supplied by Wonguk Lee, displayed on white so its transparent background remains readable. Research figures open in an enlargement dialog. The Tashu map retains its OpenStreetMap attribution. The drone figure remains a proposed research model.
+
+The latest patent ledger contributes four registered Korean patents, two Korean applications, and one PCT application, all naming Wonguk Lee as an inventor. Four previously supplied patent/application records are retained. A PCT filing is labeled as an international application, not a granted patent.
+
+## Editing
+
+Edit index.html for content, style.css for appearance, and site.js for interactions. Keep all linked assets and PDFs in their corresponding folders. When updating the CV, replace both CV PDFs or update all links to a new dated filename. Update stylesheet and script version queries after changes.
