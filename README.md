@@ -1,21 +1,40 @@
-# Wonguk Lee
+# Wonguk Lee — Academic website
 
-Academic homepage for GitHub Pages. Updated 3 November 2026.
+Complete GitHub Pages package. Updated 3 November 2026.
 
-This is a complete static website. No build, installation, server, or API key is required. Upload the contents of this folder directly to the repository root, with index.html beside the assets and materials folders.
+## Upload
 
-## Content and design
+Extract the ZIP and upload its contents to the root of the existing repository. index.html must sit alongside style.css, site.js, assets/, and materials/. Keep the existing GitHub Pages main/root settings. No installation, build, API key, third-party fonts, or hosting service is required.
 
-The default tab is Papers & Books; the other tabs are Positions & Experience, Projects, and Patents. Papers are grouped into Published and forthcoming, Working papers, and Work in progress. All 16 paper entries include their author lists. Individual submission and revision statuses are preserved; review-stage journal names are not shown. AI Summary Design in Consumer Complaint Platforms is a working title.
+## Visual direction
 
-The website uses a white background, Georgia typography, a compact profile column, and readable bibliography entries. Mobile layouts include a collapsible navigation menu. Tabs support keyboard navigation, browser history, and links to individual entries.
+White page, warm neutral surfaces, deep burgundy accents, charcoal text, and Georgia headings. The profile, research bibliography, clinical figures, patent records, and downloadable documents have distinct layouts appropriate to their content. A small monogram and a consistent title hierarchy connect the four sections.
 
-The CV restores the original A4, Times New Roman, numbered uppercase sections, horizontal rules, and bullet format. Both PDF files in materials contain the same updated four-page CV. Site buttons use the dated filename to avoid opening a cached older version.
+Published and forthcoming papers, Working papers, and Work in progress are now nested tabs. Counts refer to papers, excluding books. Individual statuses remain visible as text and are not conveyed by color alone. Registered patents, applications, and the previously supplied specification are separately grouped.
 
-The clinical chatbot figure is the original architecture diagram supplied by Wonguk Lee, displayed on white so its transparent background remains readable. Research figures open in an enlargement dialog. The Tashu map retains its OpenStreetMap attribution. The drone figure remains a proposed research model.
+Original research images, all 16 paper titles and author lists, their individual statuses, all 11 patent records, and downloadable PDF bytes are preserved. The CV retains the user's original Times New Roman format. The clinical architecture is the second image supplied by the user, not a newly invented framework.
 
-The latest patent ledger contributes four registered Korean patents, two Korean applications, and one PCT application, all naming Wonguk Lee as an inventor. Four previously supplied patent/application records are retained. A PCT filing is labeled as an international application, not a granted patent.
+## Design references
 
-## Editing
+References informed typography, hierarchy, and composition; layouts and assets were not copied.
 
-Edit index.html for content, style.css for appearance, and site.js for interactions. Keep all linked assets and PDFs in their corresponding folders. When updating the CV, replace both CV PDFs or update all links to a new dated filename. Update stylesheet and script version queries after changes.
+- Locomotive, Editorial New: the agency credits its designers and lists Awwwards Site of the Month, Site of the Day, Developer Award, and Mobile Excellence. Reference: https://locomotive.ca/en/work/editorial-new
+- Cristóbal Balenciaga Museum, designed by Koalition: CSS Design Awards Website of the Day, 30 July 2021. Reference: https://cssdesignawards.com/sites/cristobal-balenciaga-museum/39305/
+- Editorial New award announcement: https://www.awwwards.com/editorial-new-variable-typeface-by-locomotive-wins-site-of-the-month-october.html
+- W3C WCAG 2.2 text contrast guidance: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- W3C WCAG 2.2 target-size guidance: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+
+## Interaction and accessibility
+
+- Labeled navigation and nested tabs with selected states, arrow-key navigation, and Home/End support.
+- Visible keyboard focus, a working skip link, and focus transfer after mobile navigation and deep links.
+- Persistent deep links and browser Back/Forward support for paper categories and individual records.
+- Main buttons use at least 44 px target heights. Text links have adequate height or spacing; in-paragraph links retain normal text flow.
+- Text color pairs meet WCAG AA thresholds. A computed-style sample of 71 visible text elements passed; its lowest normal-text contrast was 5.56:1. This is not a claim of an independent WCAG certification.
+- Responsive review at 320, 390, 768, and 1024 px widths, plus the desktop browser viewport. Research diagrams may scroll inside their own enlargement or figure container without forcing page-level horizontal scrolling.
+- Native image dialog supports Escape and returns focus to its trigger. Motion preference is respected. There is no autoplay or scroll hijacking.
+- Without JavaScript, content is available as ordinary sections. Print CSS includes every paper category.
+
+## Maintenance
+
+Update content in index.html, visual tokens and layouts in style.css, and navigation behavior in site.js. Keep all linked files in their original folders. The dated CV filename avoids cached old PDFs. Update the CSS and JavaScript version suffixes after future design changes.

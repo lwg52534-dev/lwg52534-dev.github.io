@@ -1,6 +1,12 @@
+'use strict';
 document.documentElement.classList.add('js-ready');
 const menuButton = document.querySelector('.menu-toggle');
 const primaryMenu = document.getElementById('primary-menu');
+const tabs = [...primaryMenu.querySelectorAll('[role="tab"]')];
+const panels = [...document.querySelectorAll('.tab-panel')];
+const categoryMenu = document.querySelector('.paper-index');
+const categoryTabs = [...categoryMenu.querySelectorAll('[role="tab"]')];
+const categories = [...document.querySelectorAll('.pub-section')];
 function closeMenu() {
   menuButton.setAttribute('aria-expanded', 'false');
   primaryMenu.classList.remove('is-open');
@@ -10,21 +16,14 @@ menuButton.addEventListener('click', () => {
   menuButton.setAttribute('aria-expanded', String(open));
   primaryMenu.classList.toggle('is-open', open);
 });
-primaryMenu.addEventListener('click', event => {
-  if (event.target.closest('a')) closeMenu();
-});
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
-    closeMenu();
-    menuButton.focus();
+    closeMenu(); menuButton.focus();
   }
 });
-const tabs = [...primaryMenu.querySelectorAll('[role="tab"]')];
-const panels = [...document.querySelectorAll('.tab-panel')];
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-function activatePanel(id) {
-  for (const panel of panels) panel.hidden = panel.id !== id;
-  for (const tab of tabs) {
+function selectTab(id, tabList, panelList) {
+  for (const panel of panelList) panel.hidden = panel.id !== id;
+  for (const tab of tabList) {
     const active = tab.getAttribute('aria-controls') === id;
     tab.setAttribute('aria-selected', String(active));
     tab.tabIndex = active ? 0 : -1;
@@ -36,9 +35,15 @@ function resolveHash(hash) {
 }
 function revealTarget(target, scroll) {
   const panel = target?.closest('.tab-panel');
-  if (panel) activatePanel(panel.id);
-  else if (!target || target.id === 'about') activatePanel('publications');
-  if (scroll && target) target.scrollIntoView({behavior: reducedMotion.matches ? 'auto' : 'smooth', block:'start'});
+  const category = target?.closest('.pub-section');
+  if (panel) selectTab(panel.id, tabs, panels);
+  else if (!target || target.id === 'about') {
+    selectTab('publications', tabs, panels);
+    selectTab('published', categoryTabs, categories);
+  }
+  if (category) selectTab(category.id, categoryTabs, categories);
+  const scrollTarget = category && target === category ? document.getElementById('publications') : target;
+  if (scroll && scrollTarget) scrollTarget.scrollIntoView({behavior:'auto',block:'start'});
 }
 document.addEventListener('click', event => {
   const link = event.target.closest('a[href^="#"]');
@@ -46,33 +51,40 @@ document.addEventListener('click', event => {
   const target = resolveHash(link.getAttribute('href'));
   if (!target) return;
   event.preventDefault();
+  const menuWasOpen = menuButton.getAttribute('aria-expanded') === 'true';
   closeMenu();
   history.pushState(null, '', link.getAttribute('href'));
   revealTarget(target, true);
+  if ((link.getAttribute('role') !== 'tab' || menuWasOpen) && target.id !== 'about') {
+    if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+    target.focus({preventScroll:true});
+  }
 });
-primaryMenu.addEventListener('keydown', event => {
-  const i = tabs.indexOf(event.target);
-  if (i === -1 || !['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
-  event.preventDefault();
-  const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (i + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
-  const tab = tabs[next];
-  history.pushState(null, '', tab.getAttribute('href'));
-  activatePanel(tab.getAttribute('aria-controls'));
-  tab.focus();
-});
+function keyboardTabs(menu, list, panelList) {
+  menu.addEventListener('keydown', event => {
+    const i = list.indexOf(event.target);
+    if (i < 0 || !['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
+    event.preventDefault();
+    const next = event.key === 'Home' ? 0 : event.key === 'End' ? list.length - 1 : (i + (event.key === 'ArrowRight' ? 1 : -1) + list.length) % list.length;
+    const tab = list[next];
+    history.pushState(null, '', tab.getAttribute('href'));
+    selectTab(tab.getAttribute('aria-controls'), list, panelList);
+    tab.focus();
+  });
+}
+keyboardTabs(primaryMenu,tabs,panels);
+keyboardTabs(categoryMenu,categoryTabs,categories);
 window.addEventListener('popstate', () => revealTarget(resolveHash(location.hash), true));
 window.addEventListener('hashchange', () => revealTarget(resolveHash(location.hash), true));
-revealTarget(resolveHash(location.hash), false);
-// A direct link may initially point into a panel that progressive enhancement hides.
-if (location.hash) requestAnimationFrame(() => revealTarget(resolveHash(location.hash), true));
-
+selectTab('published',categoryTabs,categories);
+revealTarget(resolveHash(location.hash),false);
+if (location.hash) requestAnimationFrame(() => revealTarget(resolveHash(location.hash),true));
 const figureDialog = document.getElementById('figure-dialog');
 let figureTrigger;
 for (const link of document.querySelectorAll('.js-figure')) {
   link.addEventListener('click', event => {
     if (!figureDialog.showModal || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    event.preventDefault();
-    figureTrigger = link;
+    event.preventDefault(); figureTrigger = link;
     document.getElementById('figure-dialog-title').textContent = link.dataset.title;
     document.getElementById('figure-dialog-image').src = link.href;
     document.getElementById('figure-dialog-image').alt = link.querySelector('img').alt;
@@ -84,7 +96,7 @@ document.getElementById('close-figure').addEventListener('click', () => figureDi
 figureDialog.addEventListener('click', event => {
   if (event.target === figureDialog) {
     const r = figureDialog.getBoundingClientRect();
-    if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) figureDialog.close();
+    if (event.clientX<r.left || event.clientX>r.right || event.clientY<r.top || event.clientY>r.bottom) figureDialog.close();
   }
 });
 figureDialog.addEventListener('close', () => figureTrigger?.focus());
