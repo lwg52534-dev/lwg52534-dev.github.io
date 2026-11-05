@@ -1,18 +1,10 @@
-GITHUB PAGES UPDATE
+GITHUB PAGES — EDITORIAL V6
 
-1. Extract Wonguk_Lee_GitHub_Pages.zip on your computer.
-2. Open your existing GitHub Pages repository.
-3. Choose Add file > Upload files.
-4. Upload the extracted contents, including index.html, style.css, site.js,
-   assets, and materials. Do not upload the ZIP itself or an enclosing folder.
-5. Commit the changes to your published branch.
-6. Wait for the GitHub Pages deployment to finish, then reload the website.
+1. Unzip the archive.
+2. Upload its CONTENTS to your repository root.
+3. Replace index.html; add editorial-v6.css and editorial-v6.js; upload assets/ and materials/.
+4. Keep the existing Pages setting (main / root), commit, and wait for deployment.
 
-Keep your existing Pages configuration: publish the repository root from main.
-The package does not require npm, a build workflow, or a GitHub integration.
+No build step is required. This version uses a horizontal header and personal introduction instead of a fixed sidebar. Older style and script files are no longer referenced.
 
-All CV buttons point to materials/Wonguk_Lee_CV_2026-11-03.pdf.
-materials/Wonguk_Lee_CV.pdf is also updated for older direct links.
-
-The unused assets/therapy-mechanism.svg from the previous version can be removed.
-The new website uses assets/clinical-model-framework.png instead.
+The original-format CV, research statement, proposal, portrait, and actual research figures are included.

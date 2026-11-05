@@ -1,40 +1,27 @@
 # Wonguk Lee — Academic website
 
-Complete GitHub Pages package. Updated 3 November 2026.
+A complete, buildless static website for GitHub Pages. V6 rebuilds the presentation around a personal introduction, a horizontal navigation bar, an actual research figure, and an editorial bibliography.
 
 ## Upload
 
-Extract the ZIP and upload its contents to the root of the existing repository. index.html must sit alongside style.css, site.js, assets/, and materials/. Keep the existing GitHub Pages main/root settings. No installation, build, API key, third-party fonts, or hosting service is required.
+Upload the contents of this folder to the repository root. Replace index.html, add editorial-v6.css and editorial-v6.js, and upload assets/ and materials/. Keep GitHub Pages set to main / root. No build step is required. Old design-v3/v4/v5.css and site-v3/v4/v5.js files are no longer referenced.
 
-## Visual direction
+## Navigation and accessibility
 
-White page, warm neutral surfaces, deep burgundy accents, charcoal text, and Georgia headings. The profile, research bibliography, clinical figures, patent records, and downloadable documents have distinct layouts appropriate to their content. A small monogram and a consistent title hierarchy connect the four sections.
+Papers & Books opens by default. Positions & Experience, Projects, and Patents are separate views. All content supports direct hash links and browser Back. Tab groups support arrow keys, Home, and End. Figure dialogs close with Escape and restore focus. Mobile navigation stays visible without hiding sections in a menu.
 
-Published and forthcoming papers, Working papers, and Work in progress are now nested tabs. Counts refer to papers, excluding books. Individual statuses remain visible as text and are not conveyed by color alone. Registered patents, applications, and the previously supplied specification are separately grouped.
+## Typography and visual direction
 
-Original research images, all 16 paper titles and author lists, their individual statuses, all 11 patent records, and downloadable PDF bytes are preserved. The CV retains the user's original Times New Roman format. The clinical architecture is the second image supplied by the user, not a newly invented framework.
+Self-hosted Source Serif 4 and Source Sans 3 are used for titles and supporting information. The research introduction and perspective use black Georgia. Original portrait and research figures are preserved. Thin section rules and an understated color palette replace decorative section illustrations. Font licenses are in assets/fonts/.
 
-## Design references
+Design research included Eames Institute (Instrument), MIT Museum (Cogapp), and Pentagram Archive (AREA 17). The website is an independent implementation; their artwork and code are not used.
 
-References informed typography, hierarchy, and composition; layouts and assets were not copied.
+## Research content
 
-- Locomotive, Editorial New: the agency credits its designers and lists Awwwards Site of the Month, Site of the Day, Developer Award, and Mobile Excellence. Reference: https://locomotive.ca/en/work/editorial-new
-- Cristóbal Balenciaga Museum, designed by Koalition: CSS Design Awards Website of the Day, 30 July 2021. Reference: https://cssdesignawards.com/sites/cristobal-balenciaga-museum/39305/
-- Editorial New award announcement: https://www.awwwards.com/editorial-new-variable-typeface-by-locomotive-wins-site-of-the-month-october.html
-- W3C WCAG 2.2 text contrast guidance: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
-- W3C WCAG 2.2 target-size guidance: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+All 16 papers, 2 book entries, 11 patent/specification records, author lists, awards, and supplied documents are retained. Review-stage journal names are omitted. ICIS proceedings are available; the presentation is upcoming in December 2026. The 13–16 December range refers to conference dates, not an individual presentation time.
 
-## Interaction and accessibility
+The featured diagram is the supplied clinical chatbot architecture, labelled accordingly. It is not relabelled as the ICIS paper's main-study framework.
 
-- Labeled navigation and nested tabs with selected states, arrow-key navigation, and Home/End support.
-- Visible keyboard focus, a working skip link, and focus transfer after mobile navigation and deep links.
-- Persistent deep links and browser Back/Forward support for paper categories and individual records.
-- Main buttons use at least 44 px target heights. Text links have adequate height or spacing; in-paragraph links retain normal text flow.
-- Text color pairs meet WCAG AA thresholds. A computed-style sample of 71 visible text elements passed; its lowest normal-text contrast was 5.56:1. This is not a claim of an independent WCAG certification.
-- Responsive review at 320, 390, 768, and 1024 px widths, plus the desktop browser viewport. Research diagrams may scroll inside their own enlargement or figure container without forcing page-level horizontal scrolling.
-- Native image dialog supports Escape and returns focus to its trigger. Motion preference is respected. There is no autoplay or scroll hijacking.
-- Without JavaScript, content is available as ordinary sections. Print CSS includes every paper category.
+## Documents
 
-## Maintenance
-
-Update content in index.html, visual tokens and layouts in style.css, and navigation behavior in site.js. Keep all linked files in their original folders. The dated CV filename avoids cached old PDFs. Update the CSS and JavaScript version suffixes after future design changes.
+materials/Wonguk_Lee_CV.pdf is the four-page CV in the original A4 / Times New Roman format, including Awards and Honors and the upcoming ICIS presentation. The dated CV filename contains the same PDF. The research statement and Planet research proposal are included. The separate portable HTML preview embeds every required font, image, and PDF and is not needed for deployment.
