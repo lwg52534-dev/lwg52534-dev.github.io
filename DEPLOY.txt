@@ -1,1 +1,9 @@
-Extract the ZIP and upload its contents to the GitHub repository root, replacing matching files. Keep assets/ and materials/ intact. Select main and /(root) in GitHub Pages settings. The standalone preview is separate and should not replace index.html.
+GitHub Pages upload
+
+1. Extract this ZIP.
+2. Upload index.html and the assets and materials folders to the root of your GitHub Pages repository, replacing files with the same names.
+3. Commit the changes and wait for the Pages deployment to complete.
+
+The root index.html is self-contained: it includes the current design, fonts, scripts, images, and PDFs. The CV embedded in index.html has been reformatted on 6 November 2026. Replace index.html as well as the materials folder when updating the CV. Uploading the PDF alone will not replace the embedded copy.
+
+Legacy CSS and JavaScript files are not referenced by this index.html. Keep the filename exactly index.html.
