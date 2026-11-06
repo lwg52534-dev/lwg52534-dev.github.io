@@ -1,12 +1,15 @@
-# Wonguk Lee — academic website V8
+# Wonguk Lee — academic website V9
 
-Upload the contents of this archive to the repository root. index.html must be beside assets/, materials/, portfolio-v8.css and portfolio-v8.js. No installation or build is needed.
+Upload the contents of this archive to the repository root, replacing matching files. Keep index.html beside assets/, materials/, portfolio-v9.css and portfolio-v9.js. No build or installation is needed.
 
-GitHub Pages: Settings > Pages > Deploy from a branch > main > /(root). Overwrite matching files; old version CSS and JS files are no longer used.
+GitHub Pages: Settings > Pages > Deploy from a branch > main > /(root).
 
-## What is included
-All research records, figures and documents; self-hosted Instrument Serif and Manrope with their SIL Open Font Licenses; responsive layout; full research search; keyboard navigation; figure enlargement; native research-focus disclosures; and email copying. Search runs entirely in the browser. No analytics or external scripts. Motion respects the operating-system reduced-motion preference.
+## Design and interactions
+The header uses a clean Wonguk Lee wordmark. Space Grotesk is used for the wordmark and headings, DM Sans for body and interface copy, and IBM Plex Mono for small research labels and dates. Fonts are bundled locally with their SIL Open Font Licenses. The typography system covers all four sections, search, and document links.
 
-Junehwan Kim, Wonguk Lee, and Euiseok Kim are listed in that order for the forthcoming AJTI paper. Equal-contribution markers have been removed from the website and CV.
+The website includes local paper search (press /), keyboard navigation, research-focus disclosures, enlarged original figures, email copying, and a reading progress line. Reduced-motion preferences are respected. No analytics or external scripts.
 
-Edit index.html for content, portfolio-v8.css for presentation, and portfolio-v8.js for interactions. Research text retains Georgia. The CV retains its original academic format and Times New Roman.
+## Content
+All 16 paper records, two book entries, research projects, and 11 patent/specification records are retained. The forthcoming AJTI paper lists Junehwan Kim, Wonguk Lee, and Euiseok Kim, without equal-contribution marks. The corrected original-format CV is included unchanged from V8.
+
+Edit index.html for content, portfolio-v9.css for appearance, and portfolio-v9.js for interactions. The standalone preview is a separate review file; do not substitute it for index.html.
