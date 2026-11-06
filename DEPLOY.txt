@@ -1,10 +1,1 @@
-GITHUB PAGES — EDITORIAL V6
-
-1. Unzip the archive.
-2. Upload its CONTENTS to your repository root.
-3. Replace index.html; add editorial-v6.css and editorial-v6.js; upload assets/ and materials/.
-4. Keep the existing Pages setting (main / root), commit, and wait for deployment.
-
-No build step is required. This version uses a horizontal header and personal introduction instead of a fixed sidebar. Older style and script files are no longer referenced.
-
-The original-format CV, research statement, proposal, portrait, and actual research figures are included.
+Extract the ZIP and upload its contents to the GitHub repository root, replacing matching files. Keep assets/ and materials/ intact. Select main and /(root) in GitHub Pages settings. The standalone preview is separate and should not replace index.html.
